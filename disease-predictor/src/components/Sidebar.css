@@ -1,0 +1,13 @@
+.sidebar {
+  width: 250px;
+  min-height: 100vh;
+  padding: 20px;
+  background: #f1f1f1;
+  border-right: 2px solid #ccc;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar.collapsed {
+  width: 60px;
+  overflow: hidden;
+}
