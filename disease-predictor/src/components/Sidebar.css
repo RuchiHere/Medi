@@ -1,13 +1,30 @@
 .sidebar {
   width: 250px;
   min-height: 100vh;
-  padding: 20px;
-  background: #f1f1f1;
-  border-right: 2px solid #ccc;
-  transition: all 0.3s ease-in-out;
+  background-color: #2e7d32;
+  color: white;
+  padding: 1.5rem;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
 }
 
-.sidebar.collapsed {
-  width: 60px;
-  overflow: hidden;
+.sidebar h2 {
+  margin-bottom: 1.5rem;
+}
+
+.user-box, .product-info {
+  margin-bottom: 2rem;
+}
+
+.user-box p, .product-info p {
+  margin: 0.5rem 0;
+}
+
+.sidebar button {
+  margin-top: 10px;
+  background: white;
+  color: #2e7d32;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
 }

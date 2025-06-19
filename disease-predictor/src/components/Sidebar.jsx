@@ -1,29 +1,15 @@
-import React from 'react';
-import './Sidebar.css';
+import React from "react";
+import "./Sidebar.css";
 
-const Sidebar = ({ user, onLogout, collapsed, toggleSidebar }) => {
+const Sidebar = ({ userInfo, onLogout }) => {
   return (
-    <div className={`sidebar ${collapsed ? "collapsed" : ""}`}>
-      <button onClick={toggleSidebar}>
-        {collapsed ? "➡️" : "⬅️"}
-      </button>
-
-      {!collapsed && (
-        <>
-          <h2>User Info</h2>
-          <p><strong>Name:</strong> {user.name}</p>
-          <p><strong>Email:</strong> {user.email}</p>
-
-          <h3>About Product</h3>
-          <ul>
-            <li>Disease Prediction</li>
-            <li>Random Forest ML Model</li>
-            <li>Version: 1.0</li>
-          </ul>
-
-          <button onClick={onLogout}>Logout</button>
-        </>
-      )}
+    <div className="sidebar">
+      <div className="user-box">
+        <h4>User Info</h4>
+        <p><strong>Name:</strong> {userInfo.name}</p>
+        <p><strong>Email:</strong> {userInfo.email}</p>
+        <button onClick={onLogout}>Logout</button>
+      </div>
     </div>
   );
 };

@@ -1,0 +1,35 @@
+.user-login-form {
+  margin: auto;
+  margin-top: 80px;
+  max-width: 400px;
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 128, 0, 0.2);
+  background-color: #f1fef3;
+}
+
+.user-login-form h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #2e7d32;
+}
+
+.user-login-form input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.user-login-form button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
